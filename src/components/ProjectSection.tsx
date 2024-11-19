@@ -1,27 +1,27 @@
-import { motion, useInView } from "motion/react";
-import { useRef } from "react";
+import { motion, useInView } from 'motion/react';
+import { useRef } from 'react';
 export const ProjectSection = () => {
   const data = {
-    title: "repo-name",
-    author: "repo-author",
-    description: "Generic description for a repo.",
-    langauge: "TypeScript",
-    repo: "https://github.com/HiddenAbilitree/sbcshs-website",
-    color: " bg-success",
+    title: 'repo-name',
+    author: 'repo-author',
+    description: 'Generic description for a repo.',
+    langauge: 'TypeScript',
+    repo: 'https://github.com/HiddenAbilitree/sbcshs-website',
+    color: ' bg-success',
   };
   const ref = useRef(null);
   const isVisible = useInView(ref, {
     amount: 0.9,
     // once: true,
-    margin: "-200px 0px 300px 0px",
+    margin: '-200px 0px 300px 0px',
   });
 
   return (
     <motion.div
       style={{
-        transform: isVisible ? "none" : "translateX(-200px)",
+        transform: isVisible ? 'none' : 'translateX(-200px)',
         opacity: isVisible ? 1 : 0,
-        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) ",
+        transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) ',
       }}
       ref={ref}
       className="flex h-screen w-full items-center justify-center overflow-hidden"

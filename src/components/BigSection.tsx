@@ -1,10 +1,10 @@
-import { motion, useInView } from "motion/react";
-import { useRef } from "react";
+import { motion, useInView } from 'motion/react';
+import { useRef } from 'react';
 export const BigSection = ({ children }: { children: string }) => {
   const ref = useRef(null);
   const isVisible = useInView(ref, {
     amount: 0.95,
-    margin: "-300px 0px -300px 0px",
+    margin: '-300px 0px -300px 0px',
   });
   return (
     <motion.div

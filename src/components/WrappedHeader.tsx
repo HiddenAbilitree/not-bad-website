@@ -4,7 +4,7 @@ export const WrappedHeader = ({
 }: {
   divRef: React.RefObject<HTMLDivElement>;
 }) => {
-  const isInView = useInView(divRef, { amount: 0.7 });
+  const isInView = useInView(divRef, { amount: 0.61 });
   return (
     <motion.div
       initial={{ opacity: 0 }}

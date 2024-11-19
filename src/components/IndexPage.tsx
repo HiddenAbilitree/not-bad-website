@@ -6,7 +6,7 @@ import { motion, useInView } from 'framer-motion';
 export const IndexPage = () => {
   const ref = useRef(null);
   const isVisible = useInView(ref, {
-    amount: 0.7,
+    amount: 0.61,
     once: false,
   });
   return (

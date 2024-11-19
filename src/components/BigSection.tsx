@@ -3,7 +3,7 @@ import { useRef } from 'react';
 export const BigSection = ({ children }: { children: string }) => {
   const ref = useRef(null);
   const isVisible = useInView(ref, {
-    amount: 0.7,
+    amount: 0.65,
     margin: '-300px 0px -300px 0px',
   });
   return (

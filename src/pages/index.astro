@@ -1,7 +1,6 @@
 ---
 import { IndexPage } from '../components/IndexPage';
 import Page from '@layouts/Page.astro';
-import ScrollSuggestion from '@components/ScrollSuggestion.astro';
 ---
 
-<Page><ScrollSuggestion /><IndexPage client:only="react" /></Page>
+<Page><IndexPage client:only="react" /></Page>

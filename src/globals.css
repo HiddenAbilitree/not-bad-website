@@ -16,19 +16,34 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --primary: #a9b1d6;
+      --primary-content: #0a0c10;
       --secondary: #787c99;
+      --secondary-content: #050508;
       --accent: #bb9af7;
+      --accent-content: #0d0915;
       --neutral: #565f89;
-      --base: #25293c;
+      --neutral-content: #dbdde7;
+      --base-100: #25293c;
+      --base-200: #1f2233;
+      --base-300: #191c2a;
+      --base-content: #ced0d5;
       --info: #7dcfff;
+      --info-content: #051016;
       --success: #9ece6a;
+      --success-content: #090f04;
       --warning: #e0af68;
+      --warning-content: #120b04;
       --error: #db4b4b;
+      --error-content: #110202;
     }
   }
 }
 
 @layer base {
+  * {
+    @apply selection:bg-neutral;
+  }
+
   /* * { */
   /* @apply border-foreground/20; */
   /* } */

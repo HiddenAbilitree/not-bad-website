@@ -1,10 +1,6 @@
 ---
 import { IndexPage } from '../components/IndexPage';
 import Page from '@layouts/Page.astro';
-import Footer from '@components/Footer.astro';
 ---
 
-<Page>
-  <IndexPage client:only="react" />
-  <Footer />
-</Page>
+<Page> <IndexPage client:only="react" /></Page>

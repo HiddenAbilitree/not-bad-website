@@ -4,7 +4,7 @@ export const BigSection = ({ children }: { children: string }) => {
   const ref = useRef(null);
   const isVisible = useInView(ref, {
     amount: 0.65,
-    margin: '-300px 0px -300px 0px',
+    margin: '-200px 0px -200px 0px',
   });
   return (
     <motion.div

@@ -1,5 +1,4 @@
 import { motion, useInView } from 'motion/react';
-import Image from '@assets/github-mark-white.svg';
 export const WrappedHeader = ({
   divRef,
 }: {
@@ -25,7 +24,11 @@ export const WrappedHeader = ({
         <a href="/projects">projects</a>
         <a href="/blog">blog</a>
         <a href="https://github.com/HiddenAbilitree">
-          <img className="h-6 w-6 sm:h-8 sm:w-8" src={Image} alt="Github" />
+          <img
+            className="h-6 w-6 sm:h-8 sm:w-8"
+            src="/github-mark-white.svg"
+            alt="Github"
+          />
         </a>
       </nav>
     </motion.div>

@@ -10,5 +10,21 @@ import '../globals.css';
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
+  <style>
+    body {
+      background-color: #a9b1d6;
+      background-blend-mode: soft-light;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-image: url('/bg.svg');
+      /* background-image: url('https://www.transparenttextures.com/patterns/graphy-dark.png'); */
+      /* background-image: url('https://www.transparenttextures.com/patterns/gradient-squares.png'); */
+      /* background-image: url('https://www.transparenttextures.com/patterns/az-subtle.png'); */
+      /* background-image: url('https://www.transparenttextures.com/patterns/escheresque-dark.png'); */
+      /* url('https://www.transparenttextures.com/patterns/dark-geometric.png'); */
+      /* background-image: url('https://www.transparenttextures.com/patterns/axiom-pattern.png'); */
+    } /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  </style>
   <body class="bg-base-100 text-base-content flex flex-col"><slot /></body>
 </html>
